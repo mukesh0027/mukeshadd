@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Addition App</title>
+</head>
+<body>
+  <h2>Simple Addition</h2>
+
+  <input id="num1" type="number" placeholder="Enter number 1">
+  <br><br>
+  <input id="num2" type="number" placeholder="Enter number 2">
+  <br><br>
+  <button onclick="addNumbers()">Add</button>
+
+  <h3>Result: <span id="result">0</span></h3>
+
+  <script>
+    function addNumbers() {
+      var a = parseFloat(document.getElementById("num1").value) || 0;
+      var b = parseFloat(document.getElementById("num2").value) || 0;
+      document.getElementById("result").textContent = a + b;
+    }
+  </script>
+</body>
+</html>
